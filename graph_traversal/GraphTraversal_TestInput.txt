@@ -1,0 +1,83 @@
+----------------------[Test Case 1]------------------------
+<input>
+1
+7 
+Suwon Seoul Osan Daegu Busan Incheon Yongin
+Suwon-Seoul
+Osan-Suwon
+Seoul-Osan
+Suwon-Incheon
+Suwon-Yongin
+Osan-Yongin
+Seoul-Yongin
+Busan-Daegu
+Suwon-Daegu
+.
+2
+Yongin
+
+<output>
+Suwon Osan Seoul
+----------------------[Test Case 2]------------------------
+<input>
+1
+10
+A B C D E F G H I J
+A-B
+B-C
+B-D
+C-E
+D-E
+D-F
+F-G
+G-H
+F-H
+H-I
+H-J
+.
+2
+D
+
+<output>
+F B C E
+----------------------[Test Case 3]------------------------
+<input>
+1
+5
+osan suwon seoul busan daegu
+osan-suwon
+suwon-seoul
+seoul-daegu
+daegu-busan
+seoul-busan
+suwon-daegu
+.
+2
+seoul
+
+<output>
+suwon busan daegu
+----------------------[Test Case 4]------------------------
+<input>
+1
+10
+Incheon Kimpo Peju Seoul Suwon Kwangkyo Hwasung Osan Sungnam Pankyo
+Incheon-Kimpo
+Incheon-Peju
+Kimpo-Peju
+Peju-Seoul
+Seoul-Kimpo
+Seoul-Suwon
+Seoul-Hwasung
+Suwon-Kwangkyo
+Kwangkyo-Pankyo
+Kwangkyo-Hwasung
+Hwasung-Osan
+Hwasung-Sungnam
+Osan-Sungnam
+.
+2
+Seoul
+
+<output>
+Suwon Kwangkyo Hwasung Incheon Kimpo Peju

@@ -1,0 +1,200 @@
+----------------------[Test Case 1]------------------------
+<input>
+4
+kang bears 300
+jeon giants 250
+park eagles 650
+cho twins 350
+park
+ahn
+.
+
+<output>
+	park eagles 650
+	존재하지 않습니다.
+
+----------------------[Test Case 2]------------------------
+<input>
+20
+kang bears 300
+jeon giants 250
+park eagles 650
+cho twins 350
+kim bears 220
+choi eagles 1000
+jeong heroes 500
+yoon twins 100
+jang tigers 150
+seo giants 320
+yim wyverns 200
+hwang wyverns 300
+oh bears 230
+shin heroes 400
+song twins 120
+moon twins 160
+shon bears 660
+bae giants 300
+baek tigers 80
+heo eagles 500
+kang
+jeon
+choi
+hwang
+roh
+gwak
+cha
+shin
+nah
+ju
+.
+
+<output>
+probing: 10
+probing: 2
+probing: 9
+probing: 10
+probing: 9
+probing: 10
+probing: 13
+probing: 18
+probing: 24
+probing: 18
+probing: 19
+probing: 18
+probing: 19
+probing: 22
+probing: 18
+probing: 19
+probing: 22
+probing: 1
+probing: 1
+probing: 2
+probing: 1
+probing: 2
+probing: 5
+probing: 10
+probing: 7
+probing: 8
+probing: 11
+	kang bears 300
+	jeon giants 250
+probing: 2
+	choi eagles 1000
+	hwang wyverns 300
+probing: 17
+probing: 18
+	존재하지 않습니다.
+	존재하지 않습니다.
+probing: 2
+probing: 3
+	존재하지 않습니다.
+probing: 18
+probing: 19
+	shin heroes 400
+probing: 13
+probing: 14
+probing: 17
+probing: 22
+probing: 3
+probing: 12
+	존재하지 않습니다.
+probing: 9
+probing: 10
+probing: 13
+probing: 18
+probing: 25
+probing: 8
+probing: 19
+	존재하지 않습니다.
+
+<input-output total: 입출력 취합>
+입력할 값의 개수는 얼마입니까? 20
+1번째 값을 입력하세요 : kang bears 300
+2번째 값을 입력하세요 : jeon giants 250
+3번째 값을 입력하세요 : park eagles 650
+4번째 값을 입력하세요 : cho twins 350
+5번째 값을 입력하세요 : kim bears 220
+probing: 10
+6번째 값을 입력하세요 : choi eagles 1000
+probing: 2
+7번째 값을 입력하세요 : jeong heroes 500
+probing: 9
+probing: 10
+8번째 값을 입력하세요 : yoon twins 100
+9번째 값을 입력하세요 : jang tigers 150
+probing: 9
+probing: 10
+probing: 13
+10번째 값을 입력하세요 : seo giants 320
+probing: 18
+11번째 값을 입력하세요 : yim wyverns 200
+probing: 24
+12번째 값을 입력하세요 : hwang wyverns 300
+13번째 값을 입력하세요 : oh bears 230
+14번째 값을 입력하세요 : shin heroes 400
+probing: 18
+probing: 19
+15번째 값을 입력하세요 : song twins 120
+probing: 18
+probing: 19
+probing: 22
+16번째 값을 입력하세요 : moon twins 160
+17번째 값을 입력하세요 : shon bears 660
+probing: 18
+probing: 19
+probing: 22
+probing: 1
+18번째 값을 입력하세요 : bae giants 300
+probing: 1
+probing: 2
+19번째 값을 입력하세요 : baek tigers 80
+probing: 1
+probing: 2
+probing: 5
+probing: 10
+20번째 값을 입력하세요 : heo eagles 500
+probing: 7
+probing: 8
+probing: 11
+
+검색할 값을 입력하세요 : kang
+        kang bears 300
+검색할 값을 입력하세요 : jeon
+        jeon giants 250
+검색할 값을 입력하세요 : choi
+probing: 2
+        choi eagles 1000
+검색할 값을 입력하세요 : hwang
+        hwang wyverns 300
+검색할 값을 입력하세요 : roh
+probing: 17
+probing: 18
+        존재하지 않습니다.
+검색할 값을 입력하세요 : gwak
+        존재하지 않습니다.
+검색할 값을 입력하세요 : cha
+probing: 2
+probing: 3
+        존재하지 않습니다.
+검색할 값을 입력하세요 : shin
+probing: 18
+probing: 19
+        shin heroes 400
+검색할 값을 입력하세요 : nah
+probing: 13
+probing: 14
+probing: 17
+probing: 22
+probing: 3
+probing: 12
+        존재하지 않습니다.
+검색할 값을 입력하세요 : ju
+probing: 9
+probing: 10
+probing: 13
+probing: 18
+probing: 25
+probing: 8
+probing: 19
+        존재하지 않습니다.
+검색할 값을 입력하세요 : .

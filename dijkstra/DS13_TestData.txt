@@ -1,0 +1,50 @@
+----------------------[Test Case 1]------------------------
+<input>
+5
+suwon seoul daegu incheon daejon 
+suwon-seoul 10
+suwon-incheon 50
+seoul-daegu 100
+suwon-daegu 150
+suwon-daejon 50
+seoul-daejon 22
+seoul-incheon 25
+.
+
+suwon
+
+<output>
+seoul : 10 suwon seoul
+daegu : 110 suwon seoul daegu
+incheon : 35 suwon seoul incheon
+daejon : 32 suwon seoul daejon
+
+----------------------[Test Case 2]------------------------
+<input>
+10
+A B C D E F G H I J
+A-B 10
+B-C 20
+B-D 30
+C-E 5
+D-E 100
+D-F 20
+F-G 5
+G-H 8
+F-H 15
+H-I 5
+H-J 6
+.
+
+D
+
+<output>
+A : 40 D B A
+B : 30 D B
+C : 50 D B C
+E : 55 D B C E
+F : 20 D F
+G : 25 D F G
+H : 33 D F G H
+I : 38 D F G H I
+J : 39 D F G H J
