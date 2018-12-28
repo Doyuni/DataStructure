@@ -15,8 +15,8 @@ ePointer city[MAX_VERTICES];
 int id = -1;
 int distance[MAX_VERTICES]; // start vertex ~ other vertex path
 int pi[MAX_VERTICES]; // predecessor index
-int found[MAX_VERTICES]; // the shortest path ÀÎÁö È®ÀÎ¿ëµµ
-int adj_matrix[MAX_VERTICES][MAX_VERTICES]; //ÀÎÁ¢Çà·Ä
+int found[MAX_VERTICES]; // the shortest path ì¸ì§€ í™•ì¸ìš©ë„
+int adj_matrix[MAX_VERTICES][MAX_VERTICES]; //ì¸ì ‘í–‰ë ¬
 
 void intValue(int num) {
 	for (int i = 0; i < num; ++i) {
@@ -39,14 +39,14 @@ int nameToInt(char *name) {
 		if (city[i] != NULL) {
 			if (strcmp(city[i]->name, name) == 0) {
 				id--;
-				return i; //ÀÌ¸§°ú »óÀÀÇÏ´Â ÀÎÁ¢¸®½ºÆ® ÀÎµ¦½º ¸®ÅÏ
+				return i; //ì´ë¦„ê³¼ ìƒì‘í•˜ëŠ” ì¸ì ‘ë¦¬ìŠ¤íŠ¸ ì¸ë±ìŠ¤ ë¦¬í„´
 			}
 		}
 	}
 	return id;
 }
 
-//°æ·Î¸¦ È®ÀÎÇÏÁö ¾ÊÀº °Í Áß distance ÃÖ¼Ò °ªÀÇ ÀÎµ¦½º
+//ê²½ë¡œë¥¼ í™•ì¸í•˜ì§€ ì•Šì€ ê²ƒ ì¤‘ distance ìµœì†Œ ê°’ì˜ ì¸ë±ìŠ¤
 int choose(int num) { 
 	int min = 1000;
 	int index = -1;
@@ -65,7 +65,7 @@ void shortestPath(int source, int num) {
 	found[source] = 1;
 	for (i = 0; i < num; ++i) {
 		distance[i] = adj_matrix[source][i];
-		pi[i] = source; // ½ÃÀÛ vertex·Î µ¹¾Æ¿Í¾ß ÇÏ´Ï ±âº» °ªÀº ¸ğµÎ ½ÃÀÛ vertexÀÇ ÀÎµ¦½º °ªÀÌ´Ù.
+		pi[i] = source; // ì‹œì‘ vertexë¡œ ëŒì•„ì™€ì•¼ í•˜ë‹ˆ ê¸°ë³¸ ê°’ì€ ëª¨ë‘ ì‹œì‘ vertexì˜ ì¸ë±ìŠ¤ ê°’ì´ë‹¤.
 	}
 	distance[source] = 0;
 	//function
@@ -93,7 +93,7 @@ void printShortestPath(int source, int dest) {
 
 int main() {
 	int num;
-	printf("±×·¡ÇÁ ÀÔ·Â\n");
+	printf("ê·¸ë˜í”„ ì…ë ¥\n");
 	printf("Insert City Count : ");
 	scanf("%d", &num);
 	getchar();
@@ -109,7 +109,7 @@ int main() {
 		ptr = strtok(NULL, " ");
 	}
 	intValue(num);
-	printf("µµ½Ã°£ ¿¬°á ÀÔ·Â, Á¾·áÇÏ·Á¸é \".\" ÀÔ·Â\n");
+	printf("ë„ì‹œê°„ ì—°ê²° ì…ë ¥, ì¢…ë£Œí•˜ë ¤ë©´ \".\" ì…ë ¥\n");
 	do {
 		gets(input);
 		if (input[0] == '.') break;
@@ -122,7 +122,7 @@ int main() {
 		adj_matrix[v][u] = cost;
 		adj_matrix[u][v] = cost;
 	} while (input[0] != '.');
-	printf("ÃÖ´Ü °Å¸® ±âÁØ µµ½Ã ÀÔ·Â:\n");
+	printf("ìµœë‹¨ ê±°ë¦¬ ê¸°ì¤€ ë„ì‹œ ì…ë ¥:\n");
 	char city_name[20];
 	scanf("%s", city_name);
 	int source = nameToInt(city_name);
@@ -135,6 +135,6 @@ int main() {
 		}
 	}
 	system("pause");
-	//free(name)°ú free(input)À» ÇÏ¸é ¿Ö ¿À·ù°¡ ³ª´ÂÁö ±Ã±İÇÕ´Ï´Ù.
+	//free(name)ê³¼ free(input)ì„ ì“°ë©´ error, why?
 	return 0;
 }
