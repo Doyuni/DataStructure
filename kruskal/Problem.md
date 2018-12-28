@@ -1,6 +1,4 @@
 # Problem
 
-
-<img src="./kruskal_1.png" height="550" width="800" alt="Screenshot"/>   
-
-<img src="./kruskal_2.png" height="550" width="800" alt="Screenshot"/> 
+![kruskal_1](./kruskal_1.png)
+![kruskal_2](./kruskal_2.png)
